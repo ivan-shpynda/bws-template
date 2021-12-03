@@ -1,0 +1,76 @@
+.header {
+  background-image: url('../images/header-bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 26px 0 0;
+
+  &__wrapper {
+    padding: 0 8rem;
+
+    @media (max-width: 1080px) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    color: $ligthText;
+    font-size: 11rem;
+    margin: 12.5rem 0 3rem;
+    line-height: 12.6rem;
+
+    @media (max-width: 1080px) {
+      font-size: 7rem;
+      margin: 8rem 0 3rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 4rem;
+      margin: 6rem 0 2rem;
+      line-height: 6rem;
+    }
+  }
+
+  &__text {
+    color: $ligthText;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      margin: 6rem 0 4rem;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    color: $ligthText;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    background-color: $mainColor;
+    padding: 1.2rem 5.5rem;
+    margin-bottom: 26.3rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+    &:hover {
+      background-color: $ligthText;
+      color: $mainColor;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // styles for trends page
+
+  &__trends {
+    background-color: $trendsBG;
+  }
+
+  &__nav--trends {
+    padding: 2rem 0;
+  }
+}

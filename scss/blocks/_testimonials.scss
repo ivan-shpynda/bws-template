@@ -1,0 +1,55 @@
+.testimonials {
+  background-image: url('../images/testimonials-bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__card {
+    background-color: $greyDark;
+    max-width: 560px;
+    margin: 10rem 0;
+    padding: 3.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    color: $ligthText;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__person {
+    color: $mainColor;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__buttons {
+    align-self: flex-end;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > span {
+      cursor: pointer;
+    }
+  }
+
+  &__btn-left {
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/green-arrow-left.svg');
+    @include displayIcon;
+  }
+
+  &__btn-right {
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/green-arrow-right.svg');
+    @include displayIcon;
+  }
+}

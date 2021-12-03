@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Balsam",
+      "sale": true,
+      "price": 2999,
+      "image": "./images/trends1.jpeg"
+    },
+  
+    {
+      "id": 2,
+      "title": "Trevista 80 Smooth",
+      "sale": true,
+      "price": 1650,
+      "image": "./images/trends2.jpeg"
+    },
+
+    {
+      "id": 3,
+      "title": "Garden Lock Fire Pit",
+      "sale": false,
+      "price": 2000,
+      "image": "./images/trends3.jpeg"
+    },
+  
+    {
+      "id": 4,
+      "title": "Sychiv Lviv Garden",
+      "sale": true,
+      "price": 2045,
+      "image": "./images/trends4.jpeg"
+    },
+
+    {
+      "id": 5,
+      "title": "Aachen Charlemagne",
+      "sale": false,
+      "price": 1851,
+      "image": "./images/trends5.jpeg"
+    },
+
+    {
+      "id": 6,
+      "title": "Belgium KU Leuven",
+      "sale": false,
+      "price": 2100,
+      "image": "./images/trends1.jpeg"
+    },
+
+    {
+      "id": 7,
+      "title": "Kyiv Politechnic",
+      "sale": false,
+      "price": 1200,
+      "image": "./images/trends7.jpeg"
+    },
+
+    {
+      "id": 8,
+      "title": "Pidvolochysk 29 TE str",
+      "sale": false,
+      "price": 900,
+      "image": "./images/trends8.jpeg"
+    },
+
+    {
+      "id": 9,
+      "title": "Liege Belgium 900",
+      "sale": true,
+      "price": 1850,
+      "image": "./images/trends9.jpeg"
+    }
+  ]
+}

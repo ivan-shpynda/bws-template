@@ -1,0 +1,39 @@
+@import './reset';
+
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/products';
+@import './blocks/gallery';
+@import './blocks/dealer';
+
+@import './blocks/trends';
+@import './blocks/card';
+@import './blocks/about';
+
+@import './blocks/testimonials';
+@import './blocks/contacts';
+@import './blocks/form';
+@import './blocks/footer';
+
+@import './blocks/shop';
+@import './blocks/filters';
+
+.logo {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0.1rem 6.4rem;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0.1rem 3.4rem;
+  }
+}

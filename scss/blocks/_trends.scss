@@ -1,0 +1,49 @@
+.trends {
+  background-color: $mainColor;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 0 5rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+
+  &__title {
+    color: $ligthText;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    color: $ligthText;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding: 1rem 5rem;
+    border: 1px solid $ligthText;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: $mainColor;
+      background-color: $ligthText;
+    }
+  }
+
+  &__cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+    padding-bottom: 10rem;
+
+    @media (max-width: 1080px) {
+      overflow: auto;
+    }
+  }
+}

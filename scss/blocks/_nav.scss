@@ -1,0 +1,64 @@
+.nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__hamburger {
+    width: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 2.5rem;
+    }
+
+    & div {
+      background-color: $ligthText;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  &__logo {
+    color: $ligthText;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      line-height: 2.7rem;
+    }
+  }
+
+  &__cart {
+    background-image: url('../images/cart-white.svg');
+    width: 3.3rem;
+    height: 3.3rem;
+    cursor: pointer;
+    @include displayIcon;
+
+    @media (max-width: 768px) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  //styles for trends page
+
+  &__logo--trends {
+    color: $greyDark;
+  }
+
+  &__hamburger--trends div {
+    background-color: $greyDark;
+  }
+
+  &__cart--trends {
+    background-image: url('../images/cart-dark.svg');
+  }
+}

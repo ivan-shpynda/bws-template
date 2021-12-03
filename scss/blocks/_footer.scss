@@ -1,0 +1,112 @@
+.footer {
+  background-color: $greyDark;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+      gap: 7rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    @media (max-width: 1080px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    color: $ligthText;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3rem;
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3.2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-item {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      color: $greyText;
+      cursor: pointer;
+
+      &:hover {
+        color: $navHover;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+  }
+
+  &__icons-wrap {
+    @include socialNetworkBtn;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    &:hover {
+      border: 1px solid $greyText;
+    }
+
+    &--trends {
+      @include socialNetworkBtn;
+      border: 1px solid $cardBorder;
+
+      &:hover {
+        border: 1px solid $greyText;
+      }
+    }
+  }
+
+  &__icon {
+      display: block;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+
+    &-twitter {
+      background-image: url('../images/twitter-grey.svg');
+      @include displayIcon;
+    }
+
+    &-instagram {
+      background-image: url('../images/instagram-grey.svg');
+      @include displayIcon;
+    }
+
+    &-facebook {
+      background-image: url('../images/facebook-grey.svg');
+      @include displayIcon;
+    }
+  }
+
+  // styles for trends page
+
+  &__trends {
+    background-color: $trendsBG;
+  }
+
+  &__logo--trends {
+    color: $greyDark;
+  }
+}

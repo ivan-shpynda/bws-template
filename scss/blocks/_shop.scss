@@ -1,0 +1,116 @@
+.shop {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 4.8rem 0 10rem;
+  }
+
+  &__filters {
+    width: 20%;
+    min-width: 166px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__cards-wrapper-top {
+    margin: 0 1rem 3.2rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__cards-view {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__square {
+    width: 6px;
+    height: 6px;
+    background-color: $mainColor;
+  }
+
+  &__cards-wrapper {
+    width: 80%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+
+  &__cards-wrapper-bottom {
+    max-width: 350px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $shopArrow;
+
+    & :nth-child(2) {
+      color: $mainColor;
+    }
+
+    & :first-child:hover {
+      background-color: $mainColor;
+    }
+
+    & :last-child:hover {
+      background-color: $mainColor;
+    }
+
+    & :nth-child(n):hover {
+      color: $mainColor;
+      cursor: pointer;
+    }
+
+    &-wr {
+      width: 30px;
+      height: 30px;
+      border: 1px solid $shopArrow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--arrow-left {
+      width: 12px;
+      height: 12px;
+      background-image: url('../images/arrow-left.svg');
+      @include displayIcon;
+    }
+
+    &--arrow-right {
+      width: 12px;
+      height: 12px;
+      background-image: url('../images/arrow-right-grey.svg');
+      @include displayIcon;
+    }
+  }
+
+  &__select {
+    border: none;
+    color: $mainColor;
+    margin-left: 1.5rem;
+  }
+}

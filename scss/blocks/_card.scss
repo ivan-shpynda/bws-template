@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 304px;
+  min-width: 200px;
+  cursor: pointer;
+  box-shadow: 8px 9px 27px 0px rgba(34, 60, 80, 0.2);
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $ligthText;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $mainColor;
+    padding: 1rem 1.6rem;
+  }
+
+  &__title {
+    background-color: $ligthText;
+    text-align: center;
+    padding: 1.3rem;
+    color: $mainColor;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid $cardBorder;
+  }
+
+  &__buttom {
+    background-color: $ligthText;
+    display: flex;
+    height: 43px;
+  }
+
+  &__price {
+    color: $greyDark;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 43px;
+    flex: 1;
+  }
+
+  &__heart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid $cardBorder;
+    border-right: 1px solid $cardBorder;
+    min-width: 6rem;
+  }
+
+  &__heart-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/heart.svg');
+    @include displayIcon;
+  }
+
+  &__heartToggled-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/heartToggled.svg');
+    @include displayIcon;
+  }
+
+  &__cart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 6rem;
+  }
+
+  &__cart-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/cart-grey.svg');
+    @include displayIcon;
+  }
+
+  // styles in shop
+
+  &__sale-shop {
+    background-color: $mainColor;
+    color: #fff;
+  }
+}

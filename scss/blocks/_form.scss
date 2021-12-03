@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    display: block;
+    width: 100%;
+    background-color: $mainColor;
+    color: $formPlaceholder;
+    padding: 1.5rem;
+    outline: none;
+    border: 1px solid $inputBorder;
+    margin-bottom: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-family: 'CircularStd';
+
+    &::placeholder {
+      color: $formPlaceholder;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      font-family: 'CircularStd';
+    }
+
+    &-message {
+      resize: none;
+
+      &::placeholder {
+        color: $ligthText;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: $formPlaceholder;
+      }
+    }
+
+    &-submit {
+      width: 40%;
+      background-color: $ligthText;
+      color: $mainColor;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      padding: 1rem 5rem;
+      cursor: pointer;
+      border: 1px solid $ligthText;
+      transition-duration: .5s;
+
+      &:hover {
+        background-color: $mainColor;
+        color: $ligthText;
+      }
+
+      @media (max-width: 1080px) {
+        width: 100%;
+      }
+    }
+  }
+}
